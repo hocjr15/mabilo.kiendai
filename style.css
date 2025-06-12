@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #7c3aed; /* tím đậm highlight */
+    --secondary-color: #a78bfa; /* tím nhạt hơn */
+    --accent-color: #c4b5fd; /* tím pastel */
+    --text-color: #3b0764; /* tím rất đậm cho chữ */
+    --light-gray: #f5f3ff; /* nền trắng tím nhạt */
+    --white: #ffffff;
+    --shadow: 0 2px 16px rgba(124,58,237,0.08);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #f5f3ff 0%, #c4b5fd 100%);
+}
+
+.navbar {
+    background: linear-gradient(90deg, #7c3aed 60%, #a78bfa 100%);
+    color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.logo {
+    color: var(--white);
+}
+
+.nav-links a {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #f5f3ff;
+    text-shadow: 0 2px 8px #7c3aed;
+}
+
+.volunteer-btn {
+    background: linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%);
+    color: var(--white);
+    font-weight: 700;
+    box-shadow: 0 2px 8px #a78bfa44;
+}
+
+.volunteer-btn:hover {
+    background: #7c3aed;
+}
+
+.hero {
+    background: linear-gradient(120deg, #a78bfa 0%, #7c3aed 100%), url('https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/499623363_122099736740885340_3860388000911236264_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEOJ5sdGnxTCYyX9Qjj56zaxf1kmKBCoz7F_WSYoEKjPqhThsch-qTrQ74wl2nKWw3ICVUs0AEmTeOCd66dL8B5&_nc_ohc=U4KIiaPcAxwQ7kNvwGWdGwQ&_nc_oc=AdmJrx36MYKSCJ3zera2nS7vZfAkbPd8QI1CG_XyChhB9dMrQRlhyzj24T_nCGkjMhFsVNeIWbtJWy-TTyM99G2o&_nc_zt=23&_nc_ht=scontent.fhan2-5.fna&_nc_gid=DgUMsVWIFu5JRy3OlLxM1Q&oh=00_AfOlqCvRdj1N7SIrr72GcwBKAEBIIRE0EwM7uYrtqVh20A&oe=684F6554') center/cover no-repeat;
+    color: var(--white);
+}
+
+.hero h1, .hero p {
+    color: var(--white);
+    text-shadow: 0 2px 12px #7c3aed, 0 1px 4px #a78bfa;
+}
+
+.section-title, .about-content h2, .opportunities-section h2 {
+    color: #7c3aed;
+    text-shadow: 0 2px 8px #a78bfa44;
+    font-weight: 800;
+}
+
+.opportunities-section, .about-section, .contact-section {
+    background: var(--light-gray);
+}
+
+.opportunity-card, .about-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border: 2px solid #a78bfa22;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.opportunity-card:hover, .about-card:hover {
+    box-shadow: 0 4px 24px #7c3aed33;
+    border: 2px solid #7c3aed;
+}
+
+.opportunity-content h3, .about-card-content h3 {
+    color: #7c3aed;
+    font-weight: 700;
+}
+
+.category {
+    background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.apply-btn, .submit-btn {
+    background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    box-shadow: 0 2px 8px #a78bfa44;
+}
+
+.apply-btn:hover, .submit-btn:hover {
+    background: #7c3aed;
+}
+
+.footer-content, .footer-bottom {
+    background: linear-gradient(90deg, #7c3aed 60%, #a78bfa 100%);
+    color: var(--white);
+}
+
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
